@@ -1,18 +1,18 @@
-###Project B: Shell Scripting
+### Project B: Shell Scripting
 
-#####*Problem 2*
+##### *Problem 2*
 
 Command substitution is when you use a command within another command in bash. This allows the output of the inner command to be used as an argument for the outer command.
 
 commandSub1.sh and commandSub2.sh show examples of this.
 
-#####*Problem 3*
+##### *Problem 3*
 
 1) Paused and background jobs are terminated by the shell whenever you log out. This was found by opening a few programs and putting them in the background using `$ <command> &` and logging out. After logging out and back in, those processes were not to be found using the `$ jobs` command.
 2) the `$ disown` command removes jobs from the current shell. The tag `-a` removes *all* jobs and `-r` removes only *running* jobs.
 3) `$ wait` waits for job completion and returns exit status. The script, "wait.sh", shows an example of this command.
 
-#####*Problem 4*
+##### *Problem 4*
 
 1) alias: lets you define temporary names to a command.
 	- Example: `$ alias ls="ls -l`
